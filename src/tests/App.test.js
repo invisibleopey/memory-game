@@ -7,3 +7,9 @@ it('renders header component', () => {
   const headerComponent = screen.getByTestId('header');
   expect(headerComponent).toBeInTheDocument();
 });
+
+it('renders card component', () => {
+  render(<App />);
+  const cardsComponent = screen.getByTestId('cards');
+  expect(cardsComponent).toBeInTheDocument();
+});
