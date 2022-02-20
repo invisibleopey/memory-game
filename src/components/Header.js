@@ -6,6 +6,7 @@ function Header() {
     <header className="header" data-testid="header">
       <h1>Comrade Memory Game</h1>
       <Scoreboard />
+      <p>Get points by clicking on an image but don't click on any more than once!</p>
     </header>
   );
 }
