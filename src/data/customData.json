@@ -1,16 +1,16 @@
 {
   "customData": [
-    { "url": "../images/a.jpeg", "alt": "football comrade" },
-    { "url": "../images/b.jpeg", "alt": "zazoo comrade" },
-    { "url": "../images/c.jpeg", "alt": "thor comrade" },
-    { "url": "../images/d.jpeg", "alt": "violence comrade" },
-    { "url": "../images/e.jpeg", "alt": "war comrade" },
-    { "url": "../images/f.jpeg", "alt": "judge comrade" },
-    { "url": "../images/g.jpeg", "alt": "eye patch comrade" },
-    { "url": "../images/h.jpeg", "alt": "sadaunna comrade" },
-    { "url": "../images/i.jpeg", "alt": "centaur comrade" },
-    { "url": "../images/j.jpeg", "alt": "prison comrade" },
-    { "url": "../images/k.jpeg", "alt": "alfa comrade" },
-    { "url": "../images/l.jpeg", "alt": "attack ready comrade" }
+    { "url": "/images/a.jpeg", "alt": "football comrade" },
+    { "url": "/images/b.jpeg", "alt": "zazoo comrade" },
+    { "url": "/images/c.jpeg", "alt": "thor comrade" },
+    { "url": "/images/d.jpeg", "alt": "violence comrade" },
+    { "url": "/images/e.jpeg", "alt": "war comrade" },
+    { "url": "/images/f.jpeg", "alt": "judge comrade" },
+    { "url": "/images/g.jpeg", "alt": "eye patch comrade" },
+    { "url": "/images/h.jpeg", "alt": "sadaunna comrade" },
+    { "url": "/images/i.jpeg", "alt": "centaur comrade" },
+    { "url": "/images/j.jpeg", "alt": "prison comrade" },
+    { "url": "/images/k.jpeg", "alt": "alfa comrade" },
+    { "url": "/images/l.jpeg", "alt": "attack ready comrade" }
   ]
 }
