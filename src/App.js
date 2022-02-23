@@ -23,7 +23,6 @@ function App() {
     setCurrentClicked(Number(event.target.id));
   };
   useEffect(() => {
-    // TODO: Fix the error of not being able to click a wrong answer immediately.
     if (clicked.includes(currentClicked)) {
       if (score > bestScore) {
         setBestScore(score);
@@ -35,6 +34,9 @@ function App() {
       setClicked((prevState) => {
         return [...prevState, currentClicked];
       });
+      // Set the currentClicked back to null to fix the error of not being
+      // able to click a wrong answer immediately
+      setCurrentClicked(null);
     }
   }, [currentClicked]);
   useEffect(() => {
