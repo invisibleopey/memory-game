@@ -20,35 +20,23 @@ function App() {
   };
 
   const handleSelection = (event) => {
-    setCurrentClicked(event.target.id);
-    // TODO: Fix error here, and optimize the code
-    if (
-      currentClicked === clicked[0] ||
-      currentClicked === clicked[1] ||
-      currentClicked === clicked[2] ||
-      currentClicked === clicked[3] ||
-      currentClicked === clicked[4] ||
-      currentClicked === clicked[5] ||
-      currentClicked === clicked[6] ||
-      currentClicked === clicked[7] ||
-      currentClicked === clicked[8] ||
-      currentClicked === clicked[9] ||
-      currentClicked === clicked[10] ||
-      currentClicked === clicked[11]
-    ) {
-      setBestScore(score);
+    setCurrentClicked(Number(event.target.id));
+  };
+  useEffect(() => {
+    // TODO: Fix the error of not being able to click a wrong answer immediately.
+    if (clicked.includes(currentClicked)) {
+      if (score > bestScore) {
+        setBestScore(score);
+      }
       setScore(0);
       setClicked([]);
-    } else {
-      setScore((prevState) => {
-        return prevState + 1;
-      });
+    } else if (currentClicked !== null && !clicked.includes(currentClicked)) {
+      setScore(score + 1);
       setClicked((prevState) => {
-        return prevState.concat(currentClicked);
+        return [...prevState, currentClicked];
       });
-      setCurrentClicked(null);
     }
-  };
+  }, [currentClicked]);
   useEffect(() => {
     shuffleDivs();
   }, [score]);
