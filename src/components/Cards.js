@@ -7,7 +7,7 @@ function Cards(props) {
       {data.customData.map((card, index) => {
         return (
           <div key={index} onClick={props.handleSelection}>
-            <img src={card.url} alt={card.alt} id={index} />
+            <img src={process.env.PUBLIC_URL + card.url} alt={card.alt} id={index} />
           </div>
         );
       })}
